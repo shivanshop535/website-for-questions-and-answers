@@ -8,15 +8,18 @@
 /* Body and Background */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #f4f6f9;
     color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
 
 /* Header */
 h1 {
     text-align: center;
     margin-top: 20px;
-    font-size: 2.5em;
+    font-size: 2.8em;
+    color: #2d87f0;
 }
 
 /* Section Styling */
@@ -24,6 +27,7 @@ h1 {
     font-size: 2em;
     margin: 20px 0;
     text-align: center;
+    color: #4a4a4a;
 }
 
 /* QA Section Styling */
@@ -31,23 +35,42 @@ h1 {
     margin: 30px 0;
     padding: 20px;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Question Styling */
 .qa h4 {
-    font-size: 1.4em;
-    color: #2d2d2d;
+    font-size: 1.6em;
+    color: #2d87f0; /* Bright blue for questions */
     margin-bottom: 10px;
+    font-weight: bold;
+    position: relative;
+    padding-left: 20px;
+    border-left: 5px solid #2d87f0;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+/* Hover effect for Questions */
+.qa h4:hover {
+    color: #fff;
+    background-color: #2d87f0;
+    padding-left: 25px;
+    cursor: pointer;
 }
 
 /* Answer Styling */
 .qa p {
     font-size: 1.2em;
     color: #555;
+    margin-bottom: 25px;
+    text-align: left;
     line-height: 1.6;
-    margin-bottom: 20px;
+}
+
+/* Add Space Between Q&A */
+.qa + .qa {
+    margin-top: 30px;  /* Increased space between Q&A */
 }
 
 /* Footer */
@@ -57,4 +80,5 @@ footer {
     background-color: #2d87f0;
     color: white;
     margin-top: 40px;
+    border-radius: 5px;
 }

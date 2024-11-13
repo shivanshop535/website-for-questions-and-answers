@@ -12,160 +12,49 @@ body {
     color: #333;
 }
 
-/* Header Section */
-.header {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('hero-background.jpg') no-repeat center/cover;
-    color: white;
-    padding: 100px 20px;
+/* Header */
+h1 {
     text-align: center;
-}
-
-.header h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-
-.header p {
-    font-size: 1.2em;
-    max-width: 700px;
-    margin: 0 auto 20px;
-}
-
-.header .btn {
-    padding: 12px 24px;
-    background-color: #ff9800;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    text-decoration: none;
-    transition: background 0.3s;
-}
-
-.header .btn:hover {
-    background-color: #e68900;
-}
-
-/* Subjects Section */
-.subjects-section {
-    padding: 60px 20px;
-    background-color: #fff;
-    text-align: center;
-}
-
-.subjects-section h2 {
+    margin-top: 20px;
     font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #333;
 }
 
-.subject-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.subject-card {
-    width: 220px;
-    padding: 20px;
+/* Section Styling */
+.subject-title {
+    font-size: 2em;
+    margin: 20px 0;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    color: #fff;
-    text-decoration: none;
-    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.subject-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.subject-card h3 {
-    font-size: 1.6em;
-    margin-bottom: 10px;
-}
-
-.subject-card p {
-    font-size: 1em;
-}
-
-/* Colors for Subject Cards */
-.science { background-color: #4CAF50; }
-.math { background-color: #2196F3; }
-.english { background-color: #FF9800; }
-.social-studies { background-color: #9C27B0; }
-
-/* Search Bar */
-.search-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
-
-#search {
-    width: 70%;
-    padding: 12px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    font-size: 1.1em;
-}
-
-/* Chapter Content */
-.content {
+/* QA Section Styling */
+.qa-section {
+    margin: 30px 0;
     padding: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.chapter {
     background-color: #fff;
-    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* QA Card */
-.qa-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
-}
-
-.qa-card:hover {
-    transform: translateY(-5px);
-}
-
 /* Question Styling */
-.qa-card h3 {
-    font-size: 1.7em;
-    font-weight: bold;
+.qa h4 {
+    font-size: 1.4em;
     color: #2d2d2d;
     margin-bottom: 10px;
 }
 
 /* Answer Styling */
-.qa-card p {
+.qa p {
     font-size: 1.2em;
     color: #555;
     line-height: 1.6;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     background-color: #2d87f0;
     color: white;
     margin-top: 40px;
-}
-
-/* Spacing Between Questions */
-.qa-card + .qa-card {
-    margin-top: 30px;
 }

@@ -93,3 +93,103 @@ footer {
     text-align: center;
     font-size: 1em;
 }
+/* Question and Answer layout */ 
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #2d87f0;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#search {
+    width: 70%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+/* Chapter Content */
+.content {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.chapter {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* QA Card */
+.qa-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.qa-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Question Styling */
+.qa-card h3 {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #2d2d2d;
+    margin-bottom: 10px;
+}
+
+/* Answer Styling */
+.qa-card p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2d87f0;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Spacing Between Questions */
+.qa-card + .qa-card {
+    margin-top: 30px;
+}

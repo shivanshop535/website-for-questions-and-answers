@@ -1,124 +1,149 @@
+/* Global Styles */
 body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f7fc;
-            color: #333;
-        }
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
 
-        header {
-            background-color: #007BFF;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-        }
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
 
-        h1 {
-            margin: 0;
-        }
+/* Header */
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
 
-        nav {
-            margin-top: 1rem;
-            background-color: #0056b3;
-        }
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
+nav {
+    margin-top: 1rem;
+    background-color: #0056b3;
+}
 
-        nav ul li {
-            margin: 0 15px;
-        }
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
+nav ul li {
+    margin: 0 15px;
+}
 
-        nav ul li a:hover {
-            background-color: #003d80;
-            border-radius: 5px;
-        }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
 
-        main {
-            padding: 2rem;
-        }
+nav ul li a:hover {
+    background-color: #003d80;
+    border-radius: 5px;
+}
 
-        section {
-            margin-bottom: 3rem;
-        }
+/* Main Content */
+main {
+    padding: 2rem;
+}
 
-        h2 {
-            font-size: 2rem;
-            color: #0056b3;
-            margin-bottom: 1rem;
-        }
+section {
+    margin-bottom: 3rem;
+}
 
-        h3 {
-            font-size: 1.6rem;
-            color: #333;
-            margin-top: 2rem;
-        }
+h2 {
+    font-size: 2rem;
+    color: #0056b3;
+    margin-bottom: 1rem;
+}
 
-        .qa {
-            background-color: #ffffff;
-            margin-bottom: 1rem;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-        }
+h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-top: 2rem;
+}
 
-        .qa:hover {
-            background-color: #e9ecef;
-        }
+.qa {
+    background-color: #ffffff;
+    margin-bottom: 1rem;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
 
-        .qa h4 {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
+.qa:hover {
+    background-color: #e9ecef;
+}
 
-        .qa p {
-            margin: 0;
-            padding: 5px 0;
-        }
+.qa h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #007BFF;
+}
 
-        footer {
-            background-color: #007BFF;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-        }
+.qa p {
+    margin: 0;
+    padding: 5px 0;
+}
 
-        /* Responsive Design */
-        @media screen and (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
 
-            .qa {
-                font-size: 1rem;
-            }
+ul li {
+    margin-bottom: 5px;
+}
 
-            h2, h3 {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
-</head>
+/* Footer */
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
 
-<body>
-    <header>
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .qa {
+        font-size: 1rem;
+    }
+
+    h2, h3 {
+        font-size: 1.5rem;
+    }
+}

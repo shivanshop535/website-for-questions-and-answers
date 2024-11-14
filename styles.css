@@ -1,11 +1,11 @@
-/* General Reset */
+/* Reset and Box Sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and Background */
+/* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #6e7dff, #b7d8ff);
@@ -14,69 +14,75 @@ body {
 }
 
 /* Header Styling */
-.header {
+header {
     background-color: #2d87f0;
     padding: 40px 0;
     color: white;
     text-align: center;
 }
 
-.header h1 {
+header h1 {
     font-size: 3em;
     margin-bottom: 10px;
 }
 
-.header .subtitle {
+header .subtitle {
     font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
-/* Main Content */
-.main-content {
-    padding: 40px 0;
-    background-color: #f0f4f8;
+/* Main Content Styling */
+main {
+    padding: 50px 0;
+    background-color: #f9fafb;
 }
 
+/* Container for Centered Content */
 .container {
-    width: 90%;
+    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-/* QA Section */
+/* QA Section Styling */
 .qa-section {
     background-color: #fff;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.qa {
+.qa-item {
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 20px;
     border-left: 5px solid #2d87f0;
+    transition: all 0.3s ease-in-out;
 }
 
-.qa h4 {
-    font-size: 1.3em;
+.qa-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.qa-item h2 {
+    font-size: 1.5em;
     color: #2d2d2d;
-    margin-bottom: 10px;
-    transition: color 0.3s ease;
+    margin-bottom: 15px;
+    font-weight: 600;
 }
 
-.qa h4:hover {
-    color: #1f56a2;
-}
-
-.qa p {
-    font-size: 1.1em;
+.qa-item p {
+    font-size: 1.2em;
     color: #555;
+    line-height: 1.6;
 }
 
 /* Footer Styling */
 footer {
     background-color: #2d87f0;
-    padding: 20px 0;
-    text-align: center;
+    padding: 20px;
     color: white;
+    text-align: center;
     margin-top: 40px;
 }
 
@@ -86,16 +92,19 @@ footer p {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-    .header h1 {
-        font-size: 2em;
+    header h1 {
+        font-size: 2.5em;
     }
-    .header .subtitle {
+
+    header .subtitle {
+        font-size: 1.3em;
+    }
+
+    .qa-item h2 {
         font-size: 1.2em;
     }
-    .qa h4 {
+
+    .qa-item p {
         font-size: 1.1em;
-    }
-    .qa p {
-        font-size: 1em;
     }
 }

@@ -8,125 +8,143 @@
 /* Body styling */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f9;
-    padding: 20px;
 }
 
-/* Main heading */
-h1 {
-    color: #0077cc;
-    margin-bottom: 10px;
-    font-size: 2rem;
-    text-align: center;
-}
-
-/* Navbar styling */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0077cc;
-    padding: 10px 20px;
-}
-
-.navbar .logo h1 {
-    color: #fff;
-    font-size: 1.5rem;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.nav-links li a:hover {
-    text-decoration: underline;
-}
-
-/* Container and main section */
+/* Container styling */
 .container {
+    width: 90%;
     max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 5px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
-/* Chapter headings */
-.subject h2 {
-    font-size: 1.75rem;
-    color: #333;
-    margin-top: 20px;
-    border-bottom: 2px solid #0077cc;
-    padding-bottom: 5px;
+/* Header styling */
+header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin: 1rem 0;
 }
 
-/* Question and answer sections */
+header h2 {
+    font-size: 1.5rem;
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Main Content Section */
+main {
+    padding: 1.5rem;
+}
+
+.subject h3 {
+    font-size: 1.25rem;
+    color: #2e8b57;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid #2e8b57;
+    padding-bottom: 0.5rem;
+}
+
+/* Question and Answer Blocks */
 .qa {
-    margin-bottom: 15px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-left: 4px solid #0077cc;
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-left: 5px solid #2c3e50;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.qa:hover {
+    background: #f1f1f1;
 }
 
 .qa h4 {
     font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 5px;
+    color: #34495e;
+    margin-bottom: 0.5rem;
 }
 
-.qa p {
+.qa p, .qa ul {
     font-size: 1rem;
-    line-height: 1.6;
+    color: #555;
+    margin-left: 1rem;
 }
 
 .qa ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-top: 10px;
+    list-style-type: none;
+    padding-left: 1rem;
 }
 
 .qa ul li {
-    margin-bottom: 5px;
+    padding: 0.2rem 0;
+    line-height: 1.4;
 }
 
-/* Table styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+.qa ul li:before {
+    content: "•";
+    color: #2c3e50;
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
 }
 
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #0077cc;
-    color: #ffffff;
-}
-
-/* Footer */
-footer {
-    margin-top: 20px;
-    padding: 10px 0;
-    text-align: center;
-    background-color: #0077cc;
+/* Button Styling */
+button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #2c3e50;
     color: #fff;
-    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #34495e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.25rem;
+    }
+
+    .qa {
+        padding: 0.75rem;
+    }
+
+    .subject h3 {
+        font-size: 1.15rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Additional Styling for Interactive Elements */
+.qa:hover .qa h4 {
+    color: #2e8b57;
+    font-weight: bold;
 }

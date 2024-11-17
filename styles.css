@@ -1,56 +1,113 @@
-/* Basic reset */
+/* Reset default browser styling */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Set the background color and font family */
+/* Set background and font for the whole page */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 /* Container for centering content */
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  background: linear-gradient(145deg, #ffffff, #f1f1f1);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transform: translateY(-20px);
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(0);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
 }
 
 /* Header styling */
 header {
-  text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 header h1 {
-  font-size: 2.5em;
-  color: #333;
+  font-size: 2.8em;
+  color: #2d3e50;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 header p {
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: #555;
+  font-weight: 300;
+  margin-bottom: 20px;
 }
 
-/* Link button styling */
+/* Main content section */
+.content {
+  margin-bottom: 30px;
+}
+
+.content p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+/* Stylish button (link to PDF) */
 .pdf-link {
   display: inline-block;
-  padding: 12px 25px;
-  background-color: #4CAF50;
+  padding: 15px 30px;
+  background-color: #3498db;
   color: white;
   text-decoration: none;
-  font-size: 1.1em;
-  text-align: center;
-  border-radius: 5px;
-  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .pdf-link:hover {
-  background-color: #45a049;
+  background-color: #2980b9;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.pdf-link:active {
+  transform: translateY(1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2.4em;
+  }
+
+  .content p {
+    font-size: 1.1em;
+  }
+
+  .pdf-link {
+    font-size: 1.1em;
+  }
 }
